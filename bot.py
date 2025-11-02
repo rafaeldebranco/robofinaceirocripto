@@ -207,6 +207,7 @@ def trading_strategy(instrument_name, quantity, profit_percentage=0.01):
             print("Preço de lucro ainda não atingido. Aguardando...")
 
 def cancel_order(instrument_name, order_id):
+def cancel_order(instrument_name, order_id):
     print(f"Cancelando ordem {order_id} para {instrument_name}...")
     params = {
         "instrument_name": instrument_name,
@@ -245,4 +246,3 @@ if __name__ == "__main__":
     # get_account_summary()
     # get_open_orders(INSTRUMENT)
     # cancel_order(INSTRUMENT, 'SEU_ORDER_ID') # Substitua SEU_ORDER_ID pelo ID da ordem real
-
